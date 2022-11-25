@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/icon.css" />
     <link rel="stylesheet" href="css/carrossel.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <!-- GOOGLE FONTS ICONS -->
     <link
@@ -79,7 +80,7 @@
           Seus itens - 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
@@ -95,8 +96,8 @@
                   aria-expanded="false">Categoria
                 </a>
                 <ul class="dropdown-menu bg-danger border border-white">
-                  <li><a class="dropdown-item text-white" href="#">Video games</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Jogos</a></li>
+                  <li><a class="dropdown-item text-white" href="index.html#video">Video games</a></li>
+                  <li><a class="dropdown-item text-white" href="index.html#jogos">Jogos</a></li>
                 </ul>
               </li>
             </ul>
@@ -104,12 +105,12 @@
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Procurar..."
                 aria-label="Search"
               />
               <a href="telaPesquisa.html">
-              <button class="btn btn-outline-dark" type="submit">
-                Search
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
               </button>
             </a>
             </form>
@@ -135,25 +136,37 @@
             </span>
         </h4>
 
-        <div class="card mb-3  w-100 mx-auto m-5" style="max-width: 900px;">
-          <div class="row g-0 h-auto">
+        <div class="card mb-3  w-100 mx-auto" style="max-width: 900px;">
+          <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/jogo3.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/jogo3.jpg" class="img-fluid rounded-start h-100" alt="...">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
+              <div class="card-body h-auto">
                 <h5 class="card-title"> Cartucho Michael Jackson Moonwalker - Mega Drive</h5>
                 <p class="card-text">Clássico cartucho do Mega Drive: Michael Jackson's Moonwalker
                   Michael Jackson's Moonwalker, mais conhecido no Brasil simplesmente como Moonwalker, é um jogo eletrônico baseado no filme homônimo de 1988 do cantor Michael Jackson.</p>
-                  <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 100,00 </small></p>
-                  <a class="btn btn-outline-success btn-sm"href=""data-abc="true">Comprar</a>
-                  <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
+                  
+                  
+                  <!-- area de preco -->
+                  <div class="text-end mx-auto">
+                    <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 100,00 </small></p>
+                    <a class="btn btn-outline-success btn-sm" href="telaProduto.html" data-abc="true">Comprar</a>
+                    <a class="btn btn-outline-primary btn-sm" href="" data-abc="true">Calcular Frete</a>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="#"
+                      data-abc="true">Adicionar ao 
+                      <span class="material-symbols-outlined fs-6"> shopping_cart </span>
+                    </a>
+                  </div>
+                   <!--Fim area de preco  -->
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card mb-3  w-100 h-50 mx-auto m-5" style="max-width: 900px;">
+        <div class="card mb-3  w-100 mx-auto" style="max-width: 900px;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="img/cartucho-sonic.jpg" class="img-fluid rounded-start" alt="...">
@@ -163,15 +176,26 @@
                 <h5 class="card-title"> Cartucho Sonic - Mega Drive</h5>
                 <p class="card-text">Clássico cartucho do Mega Drive: Sonic The Hedgehog
                   Sonic the Hedgehog é um jogo eletrônico de plataforma produzido pela Sonic Team e publicado pela Sega para o Sega Genesis. Foi lançado originalmente na América do Norte em junho de 1991 e na região PAL no mês seguinte.</p>
-                  <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 250,00 </small></p>
-                  <a class="btn btn-outline-success btn-sm"href=""data-abc="true">Comprar</a>
-                  <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
-              </div>
+                  
+                  <!-- area de preco -->
+                  <div class="text-end mx-auto m-5">
+                    <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 100,00 </small></p>
+                    <a class="btn btn-outline-success btn-sm" href="telaProduto.html" data-abc="true">Comprar</a>
+                    <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="#"
+                      data-abc="true">Adicionar ao 
+                      <span class="material-symbols-outlined fs-6"> shopping_cart </span>
+                    </a>
+                  </div>
+                   <!--fim area de preco  -->
             </div>
           </div>
         </div>
+        </div>
 
-        <div class="card mb-3 w-100 h-50 mx-auto m-5" style="max-width: 900px;">
+        <div class="card mb-3  mx-auto" style="max-width: 900px;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="img/ps1.jpg" class="img-fluid rounded-start" alt="...">
@@ -184,30 +208,50 @@
                   O design do PlayStation® Classic espelha perfeitamente o console original, com o mesmo logotipo, layout de botão e embalagem - mas 45% menor que o PlayStation de 1994.
                   
                 </p>
-                  
-                <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 1.399,99 </small></p>
-                <a class="btn btn-outline-success btn-sm"href=""data-abc="true">Comprar</a>
-                <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
+                
+                <!-- area de preco -->
+                <div class="text-end mx-auto">
+                  <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 100,00 </small></p>
+                  <a class="btn btn-outline-success btn-sm" href="telaProduto.html" data-abc="true">Comprar</a>
+                  <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="#"
+                    data-abc="true">Adicionar ao 
+                    <span class="material-symbols-outlined fs-6"> shopping_cart </span>
+                  </a>
+                </div>
+                <!-- fim area de preco -->
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card mb-3  w-100 h-50 mx-auto m-5" style="max-width: 900px;">
+        <div class="card mb-3  w-100 h-50 mx-auto" style="max-width: 900px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="img/game-boy.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/game-boy.jpg" class="img-fluid rounded-start h-100" alt="...">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
+              <div class="card-body h-auto">
                 <h5 class="card-title">GameBoy + 2 Jogos</h5>
                 <p class="card-text">
                   Essa oferta acompanha um Game-Boy mais dois jogos de <strong>aleatórios</strong><br>
-                  <strong> Oferta por tempo limitado enquanto enquando durarem os estoques! </strong>
+                  <strong> Oferta por tempo limitado enquanto durarem os estoques! </strong>
                 </p>
-                  <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 600,00 </small></p>
-                  <a class="btn btn-outline-success btn-sm"href=""data-abc="true">Comprar</a>
+                <!-- area de preco -->
+                <div class="text-end mx-auto">
+                  <p class="card-text mx-auto"><small class="text-muted">Preço: R$ 450,00 </small></p>
+                  <a class="btn btn-outline-success btn-sm" href="telaProduto.html" data-abc="true">Comprar</a>
                   <a class="btn btn-outline-primary btn-sm"href=""data-abc="true">Calcular Frete</a>
+                  <a
+                    class="btn btn-outline-primary"
+                    href="#"
+                    data-abc="true">Adicionar ao 
+                    <span class="material-symbols-outlined fs-6"> shopping_cart </span>
+                  </a>
+                </div>
+                <!-- fim area de preco -->
               </div>
             </div>
           </div>
@@ -218,7 +262,7 @@
       <!-- INICIO DO FOOTER -->
       <footer class="container-fluid mt-5 text-center">
         <div class="row  mt-5">
-            <div class="col-12 bg-danger p-4 fs-3"><h2 class="text-white">Old Games</h2></div>
+            <div class="col-12 bg-danger p-4 fs-3"><a href="index.html"><h2 class="text-white p-4 fs-2">Old Games</h2></a></div>
         </div>
         <div class="row">
             <div class="col-12 bg-danger pb-3">
