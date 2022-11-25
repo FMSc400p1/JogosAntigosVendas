@@ -68,3 +68,11 @@ a {
     line-height: 1.5;
     border-radius: .2rem;
 }
+
+.main-img{
+    height: 250px !important;
+}
+.card-body{
+    height: 180px !important;
+    justify-self: center;
+}
